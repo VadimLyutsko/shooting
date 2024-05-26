@@ -1,0 +1,172 @@
+@import '../../../../styles/variables.module';
+
+.main {
+  color: $black-color;
+  margin-left: auto;
+  margin-bottom: 180px;
+
+  @media screen and (max-width: $desktop) {
+    margin-bottom: 170px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 80px;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+
+  @media screen and (max-width: $desktop) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (max-width: $breakpoint_767px) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 64px;
+  }
+}
+
+.title {
+  font-size: 90px;
+  font-weight: 700;
+  letter-spacing: -3.5px;
+  margin-bottom: 35px;
+  line-height: 100px;
+
+  @media screen and (max-width: $desktop) {
+    font-size: 5.225vw;
+    letter-spacing: -3px;
+    margin-bottom: 25px;
+  }
+
+  @media screen and (max-width: 1320px) {
+    font-size: 5.75vw;
+  }
+
+  @media screen and (max-width: $breakpoint_767px) {
+    font-size: 10.5vw;
+    letter-spacing: -3.2px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    font-size: 9.525vw;
+    line-height: 8vw;
+    font-weight: 600;
+    margin-bottom: 30px;
+    letter-spacing: -0.75px;
+  }
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  white-space: pre-wrap;
+
+  @media screen and (max-width: $breakpoint_767px) {
+    flex-direction: column;
+    white-space: unset;
+  }
+}
+
+.description {
+  font-size: 45px;
+  line-height: 120%;
+
+  @media screen and (max-width: 1720px) {
+    font-size: 2.5vw;
+  }
+
+  @media screen and (max-width: $desktop) {
+    font-size: 35px;
+    line-height: 120%; /* 48px */
+  }
+
+  @media screen and (max-width: 1320px) {
+    font-size: 2.25vw;
+  }
+
+  @media screen and (max-width: $breakpoint_767px) {
+    font-size: 6.77vw;
+    letter-spacing: 0;
+    line-height: 111%;
+    margin-bottom: 35px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    font-size: 6.77vw;
+    letter-spacing: -0.1px;
+    line-height: 121%;
+    margin-bottom: 59px;
+  }
+
+  span {
+    color: $pin-color;
+  }
+}
+
+.videoContainer {
+  width: 355px;
+  height: 355px;
+  margin-top: 30px;
+  margin-right: 25px;
+
+  @media screen and (max-width: 1720px) {
+    width: 21vw;
+    height: 21vw;
+  }
+
+  @media screen and (max-width: $desktop) {
+    width: 235px;
+    height: 240px;
+    padding-top: 5px;
+    margin-top: 35px;
+    margin-right: 20px;
+  }
+
+  @media screen and (max-width: 1320px) {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  @media screen and (max-width: $breakpoint_767px) {
+    width: 75vw;
+    height: 75vw;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: $mobile) {
+    width: 56vw;
+    height: 58vw;
+    margin: 0 auto;
+  }
+}
+
+.achievementsContainer {
+  display: flex;
+  // margin-right: -6px;
+  // justify-content: space-between;
+
+  @media screen and (max-width: 1720px) {
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: $desktop) {
+    // margin-right: -6px;
+    justify-content: flex-start;
+    padding-top: 8px;
+  }
+
+  @media screen and (max-width: 1320px) {
+    justify-content: space-between;
+    padding-top: 0;
+  }
+
+  @media screen and (max-width: $breakpoint_767px) {
+    flex-direction: column;
+  }
+}

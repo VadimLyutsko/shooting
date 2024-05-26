@@ -1,0 +1,38 @@
+@import '../../../styles/variables.module';
+
+.cursor {
+  cursor: pointer;
+  // stroke: $pin-color;
+}
+
+.logoColor {
+  fill: $pin-color;
+}
+
+.logoColorHover {
+  transition: fill 0.5s;
+  &:hover {
+    fill: $pin-hover-color;
+
+    @media screen and (max-width: $breakpoint_767px) {
+      fill: $pin-color;
+    }
+  }
+}
+
+.logoContainer {
+  cursor: default;
+  top: 60px;
+  position: sticky;
+  margin-bottom: 500px;
+
+  &:hover {
+  }
+
+  @media screen and (max-width: $breakpoint_767px) {
+    display: none;
+  }
+}
+
+.logoColor {
+}

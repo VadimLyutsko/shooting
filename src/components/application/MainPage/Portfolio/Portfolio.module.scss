@@ -1,0 +1,433 @@
+@import '../../../../styles/variables.module';
+
+.portfolio {
+  margin-bottom: 200px;
+  color: $black-color;
+  margin-bottom: 200px;
+
+  @media screen and (max-width: $desktop) {
+    margin-bottom: 180px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 130px;
+  }
+
+  @media screen and (max-width: $breakpoint_767px) {
+    margin-bottom: 150px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 130px;
+  }
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 105px;
+
+  @media screen and (max-width: $desktop) {
+    font-size: 60px;
+    // letter-spacing: -2.5px;
+    margin-bottom: 103px;
+  }
+
+  @media screen and (max-width: $breakpoint_574px) {
+    // align-items: center;
+  }
+
+  @media screen and (max-width: $mobile) {
+    align-items: flex-end;
+
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: $breakpoint_385px) {
+    align-items: center;
+  }
+}
+
+.textWidthBrackets {
+  display: flex;
+  align-items: flex-end;
+
+  @media screen and (max-width: $mobile) {
+    min-height: none;
+    align-items: baseline;
+  }
+
+  .titleText {
+    color: $black-color;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: -3.25px;
+    padding-left: 13px;
+    padding-right: 14px;
+    line-height: 80px;
+    line-height: 65%;
+
+    @media screen and (max-width: $desktop) {
+      font-size: 60px;
+      letter-spacing: -2.5px;
+      padding-left: 10px;
+      line-height: 60px;
+    }
+
+    @media screen and (max-width: $breakpoint_1050px) {
+      font-size: 50px;
+    }
+
+    @media screen and (max-width: $breakpoint_574px) {
+      font-size: 36px;
+      line-height: 20px;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-bottom: 0;
+    }
+
+    @media screen and (max-width: $mobile) {
+      font-size: 30px;
+      letter-spacing: 0px;
+      padding-left: 8px;
+    }
+
+    @media screen and (max-width: $breakpoint_385px) {
+      font-size: 24px;
+      // padding-bottom: 5px;
+    }
+  }
+
+  .bracket {
+    color: $pin-color;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 100%;
+
+    @media screen and (max-width: $desktop) {
+      font-size: 80px;
+      line-height: 80px;
+    }
+
+    @media screen and (max-width: $breakpoint_1050px) {
+      font-size: 60px;
+    }
+    @media screen and (max-width: $breakpoint_574px) {
+      font-size: 40px;
+      line-height: 40px;
+    }
+    @media screen and (max-width: $mobile) {
+      font-size: 34px;
+    }
+
+    @media screen and (max-width: $breakpoint_385px) {
+      font-size: 30px;
+    }
+  }
+}
+
+.linkContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: $pin-color;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+  transition: text-decoration-color 0.25s;
+
+  &:hover {
+    text-decoration-color: $white-color;
+  }
+
+  @media screen and (max-width: $desktop) {
+    text-underline-offset: 1px;
+  }
+
+  @media screen and (max-width: 1320px) {
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 5px;
+    text-underline-offset: 2px;
+  }
+
+  p {
+    color: $pin-color;
+    font-size: 28px;
+    font-weight: 500;
+    transition: color 0.5s;
+    line-height: 80%;
+
+    &:hover {
+      color: $pin-hover-color;
+    }
+
+    @media screen and (max-width: $desktop) {
+      line-height: 100%;
+      font-size: 24px;
+      letter-spacing: -0.5px;
+    }
+
+    @media screen and (max-width: $mobile) {
+      font-size: 16px;
+    }
+  }
+}
+
+.projectsContainer {
+  display: flex;
+
+  @media screen and (max-width: $mobile) {
+    display: block;
+  }
+}
+
+.desktop {
+  display: flex;
+
+  @media screen and (max-width: $breakpoint_1150px) {
+    display: none;
+  }
+}
+
+.table {
+  display: none;
+
+  @media screen and (max-width: $breakpoint_1150px) {
+    display: flex;
+  }
+
+  @media screen and (max-width: $breakpoint_625px) {
+    display: none;
+  }
+}
+
+.mobile {
+  display: none;
+
+  @media screen and (max-width: $breakpoint_625px) {
+    display: block;
+  }
+
+  .diubleMobileBlock {
+    margin-top: 20px;
+  }
+}
+
+.leftColum {
+  max-width: 39.1%;
+  // font-size: 5vw;
+  margin-right: 20px;
+  height: fit-content;
+
+  @media screen and (max-width: $desktop) {
+    max-width: 38.9%;
+  }
+
+  .largeBlock:first-child {
+    padding-top: 0;
+  }
+
+  .largeBlock:last-child {
+    padding-bottom: 0;
+  }
+
+  .largeBlock:not(:last-child) {
+    padding-bottom: 0;
+  }
+}
+
+.upperBlock {
+  display: flex;
+  margin-bottom: 20px;
+  width: 100%;
+  max-height: 430px;
+
+  @media screen and (max-width: 1720px) {
+    max-height: unset;
+  }
+
+  @media screen and (max-width: $breakpoint_767px) {
+    margin-top: 16px;
+  }
+
+  .projectContainer {
+    max-width: 50%;
+    @media screen and (max-width: $breakpoint_625px) {
+    }
+  }
+
+  .projectContainer:nth-child(2) {
+    max-width: 51%;
+  }
+}
+
+.projectContainer {
+  display: flex;
+  // max-height: 377px;
+
+  @media screen and (max-width: $breakpoint_625px) {
+    display: block;
+  }
+}
+
+.projectContainer + .projectContainer {
+  padding-left: 20px;
+
+  @media screen and (max-width: $mobile) {
+    padding-left: 16px;
+  }
+}
+
+.middleBlock {
+  display: flex;
+  margin-bottom: 20px;
+
+  .bigBlock {
+    // width: 65.75%;
+    width: 66.5%;
+    margin-right: 20px;
+    // margin-bottom: 5px; ////////////////////////////// delete!!!
+
+    // @media screen and (max-width: 1720px) {
+    //   width: 71.75%;
+    // }
+
+    // @media screen and (max-width: 1650px) {
+    //   width: 73.75%;
+    // }
+    // @media screen and (max-width: 1550px) {
+    //   width: 78.75%;
+    // }
+    // @media screen and (max-width: 1500px) {
+    //   width: 85.75%;
+    // }
+
+    @media screen and (max-width: $desktop) {
+      width: 87%;
+    }
+
+    @media screen and (max-width: 1320px) {
+      width: 74%;
+    }
+  }
+
+  .middleRight {
+    // height: 100%;
+  }
+}
+
+.lowerBlock {
+  display: flex;
+
+  @media screen and (max-width: $breakpoint_625px) {
+    margin: 20px 0;
+  }
+
+  @media screen and (max-width: 1100px) {
+    flex-wrap: wrap;
+  }
+
+  .item {
+    @media screen and (max-width: 1100px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: $breakpoint_625px) {
+      max-width: 48%;
+    }
+  }
+
+  .item:last-child {
+    width: 49.5%;
+
+    @media screen and (max-width: 1100px) {
+      width: 100%;
+    }
+  }
+
+  .item:nth-child(1) {
+    margin-right: 20px;
+
+    @media screen and (max-width: 1100px) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: $breakpoint_625px) {
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.bigBlockItemRight {
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+//  table
+.leftColumtable {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.lefttableThird,
+.lefttableFourth,
+.righttableFirst,
+.righttableSecond,
+.righttableThird,
+.righttableFourth {
+  margin-bottom: 20px;
+
+  @media screen and (max-width: $desktop) {
+    margin-bottom: 25px;
+  }
+
+  @media screen and (max-width: $breakpoint_767px) {
+    margin-bottom: 16px;
+  }
+}
+
+.rightColumtable {
+  max-width: 50%;
+}
+
+.righttableFifth {
+  max-width: 50%;
+
+  // A specific block
+
+  @media screen and (max-width: 1000px) {
+    max-width: 50%;
+  }
+
+  @media screen and (max-width: 950px) {
+    max-width: 55%;
+  }
+
+  @media screen and (max-width: 850px) {
+    max-width: 65%;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 50%;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 60%;
+  }
+}
+
+.diubleMobileBlock {
+  margin-bottom: 20px;
+  display: flex;
+  .item {
+    width: 49%;
+  }
+
+  .item:first-child {
+    margin-right: 20px;
+  }
+}

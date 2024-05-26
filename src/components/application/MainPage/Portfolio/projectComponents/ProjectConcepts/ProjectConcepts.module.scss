@@ -1,0 +1,133 @@
+@import '../../../../../../styles/variables.module';
+
+.project {
+  border-radius: 12px;
+  background: $gray-color;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 20px;
+  margin: 20px auto;
+
+  @media screen and (max-width: $breakpoint_767px) {
+    padding: 16px;
+    margin: 16px auto;
+  }
+}
+
+.projectWithoutPadding {
+  border-radius: 12px;
+  background: $gray-color;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 20px;
+  max-height: 298px;
+  padding-bottom: 33px;
+
+  @media screen and (max-width: $mobile) {
+    // padding: 16px;
+    // margin: 16px auto;
+    // height: 276px;
+  }
+}
+
+.technologiesContainer {
+  .technology {
+    display: flex;
+    height: 62px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+    background: $white-color;
+    transition: fill 0.5s;
+
+    &:hover {
+      background-color: $pin-color;
+      fill: $white-color;
+    }
+  }
+
+  .technologies2 {
+    margin-bottom: 16px;
+    .technology + .technology {
+      margin-top: 16px;
+    }
+  }
+
+  .technologies4 {
+    display: flex;
+
+    @media screen and (max-width: $breakpoint_1250px) {
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: $breakpoint_625px) {
+      flex-direction: row;
+    }
+
+    .technology + .technology {
+      margin-left: 20px;
+
+      @media screen and (max-width: $breakpoint_1250px) {
+        margin-left: 0;
+        margin-top: 20px;
+      }
+
+      @media screen and (max-width: $breakpoint_625px) {
+        margin-left: 16px;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.textContainer {
+  margin-bottom: 13px;
+
+  @media screen and (max-width: $desktop) {
+    margin-bottom: 15px;
+  }
+  .title {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 95%;
+    text-decoration: none;
+    color: $black-color;
+    white-space: pre-line;
+
+    @media screen and (max-width: $desktop) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: $breakpoint_767px) {
+      font-size: 20px;
+      margin-bottom: 3px;
+      letter-spacing: 0;
+    }
+
+    @media screen and (max-width: $breakpoint_385px) {
+      font-size: 18px;
+    }
+  }
+
+  .description {
+    align-self: stretch;
+  }
+}
+.imageContainer1920 {
+  @media screen and (max-width: $desktop) {
+    // display: none;
+  }
+  @media screen and (max-width: $breakpoint_767px) {
+  }
+  border-radius: 13px;
+  // background: var(--White, #fff);
+  display: flex;
+  justify-content: center;
+
+  img {
+    object-fit: cover;
+    // transition: 2s;
+  }
+}

@@ -1,0 +1,288 @@
+@import '../../../styles/variables.module';
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  margin-bottom: 3.5vh;
+
+  @media screen and (max-width: $desktop) {
+    margin-bottom: 7.8vh;
+  }
+
+  @media screen and (max-width: $table) {
+    display: none;
+  }
+}
+
+.social {
+  border: 1.5px solid $white-color;
+  padding: 8px;
+  border-radius: 12px;
+  fill: $white-color;
+  transition: 0.5s;
+
+  &:hover {
+    fill: $pin-hover-color;
+    border: 1.5px solid $pin-hover-color;
+  }
+
+  @media screen and (max-width: $desktop) {
+    padding: 5px;
+    border-radius: 8px;
+  }
+
+  @media screen and (max-width: $table) {
+    border-radius: 12px;
+    padding: 8px;
+  }
+}
+
+.social:not(:last-child) {
+  margin-right: 18.5%;
+
+  @media screen and (max-width: 1720px) {
+    margin-right: 10%;
+  }
+
+  @media screen and (max-width: $breakpoint_1050px) {
+    margin-right: 5%;
+  }
+}
+
+.item {
+  // cursor: pointer;
+  letter-spacing: -0.5px;
+  width: 18.85%;
+  max-height: 78px;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  left: 5.8vw;
+  border-radius: 12px;
+  transition: font-size 0.5s;
+  min-height: 80px;
+  background-color: $pin-color;
+  color: $white-color;
+  white-space: pre-wrap;
+  transition:
+    background-color 0.5s,
+    font-size 0.5s;
+
+  @media screen and (max-width: $desktop) {
+    max-height: 67px;
+    min-height: 67px;
+  }
+
+  @media screen and (max-width: 1320px) {
+    max-height: 60px;
+    min-height: 60px;
+  }
+}
+.description {
+  transition: font-size 0.5s;
+  font-size: 18px;
+  color: $white-color;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: $white-color;
+  transition: text-decoration-color 0.25s;
+
+  &:hover {
+    text-decoration-color: $pin-hover-color;
+  }
+  @media screen and (max-width: $desktop) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 1320px) {
+    font-size: 1.15vw;
+  }
+
+  .mail {
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    text-decoration-color: $white-color;
+    transition: text-decoration-color 0.25s;
+    &:hover {
+      text-decoration-color: $pin-hover-color;
+    }
+  }
+}
+
+.noLinkDescription {
+  cursor: default;
+  transition: font-size 0.5s;
+  font-size: 18px;
+  color: $white-color;
+
+  @media screen and (max-width: $desktop) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 1320px) {
+    font-size: 1.15vw;
+  }
+}
+
+.item:nth-child(1) {
+  cursor: default;
+
+  @media screen and (max-width: 1320px) {
+    padding: 15px;
+  }
+
+  @media screen and (max-width: $breakpoint_1050px) {
+    padding: 10px;
+  }
+}
+
+.item:not(:last-child) {
+  margin-right: 1vw;
+}
+
+.item:nth-child(2) {
+  &:hover {
+    background-color: $pin-hover-color;
+  }
+}
+.item:nth-child(4) {
+  &:hover {
+    background-color: $pin-hover-color;
+  }
+}
+
+// //////////
+.mobileFooter {
+  display: none;
+  background-color: $pin-color;
+  border-radius: 10px;
+  fill: $white-color;
+  padding: 40px 20px;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: $table) {
+    display: block;
+  }
+  @media screen and (max-width: $mobile) {
+    margin-left: -2px;
+    margin-right: 3px;
+    padding: 33px 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.footerHead {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.title {
+  // font-size: 26px;
+  font-size: 6.2vw;
+  color: $white-color;
+
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: $white-color;
+  transition: text-decoration-color 0.25s;
+  &:hover {
+    text-decoration-color: $pin-color;
+  }
+
+  @media screen and (max-width: $breakpoint_385px) {
+    font-size: 5.75vw;
+  }
+}
+
+.logo {
+  cursor: pointer;
+  margin-top: 7px;
+  transition: fill 0.5s;
+  fill: $white-color;
+
+  &:hover {
+    fill: $pin-hover-color;
+  }
+}
+
+.mobSocials {
+  display: flex;
+  margin-bottom: 22px;
+
+  .social {
+    display: block;
+
+    .image {
+      width: 52px;
+      height: 52px;
+
+      @media screen and (max-width: $breakpoint_625px) {
+        width: 42px;
+        height: 42px;
+      }
+    }
+
+    margin-right: 20px;
+  }
+}
+
+.mobMail {
+  font-size: 5vw;
+  width: fit-content;
+  cursor: default;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: $mobile) {
+    font-size: 14px;
+    letter-spacing: -0.2px;
+    text-underline-offset: 1px;
+    margin-bottom: 22px;
+  }
+
+  a {
+    transition:
+      color 0.5s,
+      text-decoration-color 0.25s;
+    color: $white-color;
+    &:hover {
+      color: $pin-hover-color;
+      text-decoration-color: $pin-color;
+    }
+  }
+}
+
+.mobPhone {
+  text-decoration: none;
+  font-size: 5vw;
+  color: $white-color;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: $mobile) {
+    font-size: 14px;
+    letter-spacing: -0.1px;
+    margin-bottom: 18px;
+  }
+
+  a {
+    transition: color 0.5s;
+    text-decoration: none;
+    color: $white-color;
+
+    &:hover {
+      color: $pin-hover-color;
+    }
+  }
+}
+
+.pravicy {
+  cursor: default;
+}
