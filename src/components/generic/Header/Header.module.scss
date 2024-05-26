@@ -1,9 +1,16 @@
 .header {
-  width: 100%;
+  // width: 100%;
   height: 100px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  background-color: hotpink;
+  background-color: rgba($color: hotpink, $alpha: 0.5);
+}
+
+.chapterContent {
+  // background-color: green;
+  display: flex;
+  align-items: center;
 }
 
 .chapterLink {
@@ -11,4 +18,38 @@
   font-weight: 600;
   color: black;
   font-size: 18px;
+}
+
+.theme {
+  // background-color: #fff;
+  text-align: center;
+  font-weight: 600;
+  color: black;
+  font-size: 18px;
+}
+
+.contactsContent {
+  // background-color: yellowgreen;
+  display: flex;
+  margin-right: -10%;
+}
+
+.desctopMail,
+.desctopPhone,
+.callOrder,
+.theme {
+  font-weight: 600;
+  a {
+    color: black;
+  }
+}
+
+.desctopPhone {
+  margin-right: 25px;
+}
+
+.callOrder {
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 15px;
 }

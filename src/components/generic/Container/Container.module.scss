@@ -1,49 +1,19 @@
 @import '../../../styles/variables.module';
 
 .content {
-  max-width: 1720px;
-  padding: 0 10px;
+  max-width: 1950px;
+  padding: 0 15px;
   margin: 0 auto;
   // background-color: #a01010;
 
-  @media screen and (max-width: $desktop) {
-    max-width: 1230px;
-    width: 100%;
-    // padding: 0 15px;
-  }
+  // @media screen and (max-width: $desktop) {
+  //   max-width: 1230px;
+  //   width: 100%;
+  //   // padding: 0 15px;
+  // }
 
-  @media screen and (max-width: $mobile) {
-    max-width: 446px;
-    padding: 0 16px;
-  }
-}
-
-.leftPadding {
-  padding-left: 310px;
-  // background-color: goldenrod;
-
-  @media screen and (max-width: $desktop) {
-    padding-left: 225px;
-  }
-
-  @media screen and (max-width: $breakpoint_900px) {
-    padding-left: 170px;
-  }
-
-  @media screen and (max-width: $breakpoint_767px) {
-    padding-left: 20px;
-  }
-}
-
-.container {
-  padding-left: 30px;
-
-  @media screen and (max-width: $desktop) {
-    // padding-left: 25px;
-    padding-left: 20px;
-  }
-
-  @media screen and (max-width: $table) {
-    padding-left: 16px;
-  }
+  // @media screen and (max-width: $mobile) {
+  //   max-width: 446px;
+  //   padding: 0 16px;
+  // }
 }
